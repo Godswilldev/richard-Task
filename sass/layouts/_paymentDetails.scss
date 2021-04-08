@@ -143,6 +143,11 @@
         margin: 0 auto;
         padding: 1rem 2rem;
         border-radius: 1rem;
+        @include respond(tab-port) {
+            .paragraph__title {
+                font-size: 1.5rem;
+            }
+        }
         .eye {
             width: 2rem;
             height: 2rem;

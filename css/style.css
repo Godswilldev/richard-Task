@@ -305,6 +305,9 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
   border-radius: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .cards__details .card__details--number .paragraph__title {
+      font-size: 1.5rem; } }
   .cards__details .card__details--number .eye {
     width: 2rem;
     height: 2rem;
