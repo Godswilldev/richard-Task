@@ -3,7 +3,7 @@
 
 
 ### Provided Reference Image 
-![Reference Image](./images/Richard-ui-design.webp)
+![Reference Image](./images/Richard-design.webp)
 
 ---
 ## The task
