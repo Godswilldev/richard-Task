@@ -64,3 +64,31 @@ arrow__icon.forEach(function (arrow) {
     console.log(clicked);
   });
 });
+
+/////////////////////////////////////
+//////////////////
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    const x = e.clientX;
+    const y = e.clientY;
+
+    const btnTop = e.target.offsetTop;
+    const btnLeft = e.target.offsetLeft;
+
+    const xInside = x - btnLeft;
+    const yInside = y - btnTop;
+
+    const span = document.createElement("span");
+    span.classList.add("circle");
+    span.style.top = yInside + "px";
+    span.style.left = xInside + "px";
+
+    this.appendChild(span);
+
+    setTimeout(() => {
+      span.remove();
+    }, 500);
+  });
+});

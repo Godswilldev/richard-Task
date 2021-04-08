@@ -15,6 +15,9 @@ body {
     background-color: #c4e1ff;
     height: 100vh;
     font-family: "Commissioner", sans-serif;
+    // @include respond(tab-port) {
+    //     background-color: #ffffff7c;
+    // }
 }
 .background {
     background-color: #ffffff7c;
@@ -29,14 +32,18 @@ body {
         grid-template-rows: 1fr 1fr;
         height: 100%;
         width: 100%;
+        background-color: transparent;
     }
 
     .orderSummary {
-        // background-color: green;
+        @include respond(tab-port) {
+            background-color: #ffffff7c;
+            padding: 4rem 0;
+        }
     }
 
     .paymentDetails {
-        background-color: rebeccapurple;
+        background-color: #ffffff;
         border-radius: 1rem;
     }
 }
