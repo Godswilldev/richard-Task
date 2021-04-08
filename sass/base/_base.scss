@@ -17,13 +17,19 @@ body {
     font-family: "Commissioner", sans-serif;
 }
 .background {
-    background-color: rgba(255, 255, 255, 0.486);
+    background-color: #ffffff7c;
     padding: 4rem;
     height: 90%;
     width: 90%;
     @include absCenter;
     display: grid;
     grid-template-columns: 60% 1fr;
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+        width: 100%;
+    }
 
     .orderSummary {
         // background-color: green;

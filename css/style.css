@@ -32,7 +32,7 @@ body {
   font-family: "Commissioner", sans-serif; }
 
 .background {
-  background-color: rgba(255, 255, 255, 0.486);
+  background-color: #ffffff7c;
   padding: 4rem;
   height: 90%;
   width: 90%;
@@ -42,6 +42,12 @@ body {
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 60% 1fr; }
+  @media only screen and (max-width: 56.25em) {
+    .background {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 100%;
+      width: 100%; } }
   .background .paymentDetails {
     background-color: rebeccapurple;
     border-radius: 1rem; }
@@ -98,6 +104,7 @@ body {
         color: #595959; }
 
 .shipping__items {
+  transition: 0.5s all;
   margin-top: 3rem; }
   .shipping__items .shipping__item {
     transition: 0.5s all;
@@ -117,13 +124,22 @@ body {
         transition: 0.5s all;
         width: 2rem;
         height: 2rem;
-        cursor: pointer;
-        transform: rotate(180deg); }
-        .shipping__items .shipping__item--header .arrow__icon.inactive {
-          transform: rotate(0deg); }
+        cursor: pointer; }
+        .shipping__items .shipping__item--header .arrow__icon.up {
+          transform: rotate(180deg); }
+    .shipping__items .shipping__item.active {
+      transition: 0.5s all; }
+      .shipping__items .shipping__item.active .shipping__item--lists {
+        transition: 0.5s all;
+        opacity: 1;
+        display: block;
+        visibility: visible; }
     .shipping__items .shipping__item--lists {
       transition: 0.5s all;
-      padding: 2rem 1.5rem; }
+      padding: 2rem 1.5rem;
+      opacity: 0;
+      visibility: hidden;
+      display: none; }
     .shipping__items .shipping__item--list {
       transition: 0.5s all;
       display: flex;
@@ -141,11 +157,3 @@ body {
   margin: 0rem auto;
   margin-top: 4rem;
   width: 90%; }
-
-.shipping__items.active .shipping__item--lists {
-  display: none;
-  visibility: hidden;
-  opacity: 0; }
-
-.shipping__items.active .arrow__icon {
-  transform: rotate(180deg); }
