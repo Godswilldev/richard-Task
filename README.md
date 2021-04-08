@@ -1,4 +1,4 @@
-# richard-Task
+# Richard-Task
 
 
 
@@ -9,6 +9,26 @@
 ## The task
 
 Replicate the UI with Code (CSS). Make it as close as possible to the design
+
+## Tools Used
+```
+HTML
+```
+
+```
+SCSS/SASS
+```
+```
+CSS
+```
+
+```
+JavaScript
+```
+
+```
+NPM
+```
 
 
 # How to setup project and run locally
