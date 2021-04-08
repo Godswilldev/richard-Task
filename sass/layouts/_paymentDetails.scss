@@ -1,5 +1,9 @@
 .paymentDetails {
     padding: 5rem;
+
+    @include respond(tab-port) {
+        padding: 5rem 2rem;
+    }
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -50,10 +54,16 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 3rem;
+        @include respond(tab-port) {
+            margin: 4rem 0;
+        }
 
         .secure {
             display: flex;
             margin-top: 1rem;
+            @include respond(tab-port) {
+                margin-left: 4rem;
+            }
             .lock {
                 width: 2rem;
                 height: 2rem;
@@ -63,6 +73,11 @@
             .paragraph__secondary {
                 line-height: 2rem;
                 margin-left: -1rem;
+                @include respond(tab-port) {
+                    br {
+                        display: none;
+                    }
+                }
             }
         }
 
@@ -84,6 +99,9 @@
         border: 1px solid #eee;
         box-sizing: content-box;
         margin-bottom: 2rem;
+        @include respond(tab-port) {
+            margin-bottom: 3rem;
+        }
     }
 
     .cards {
@@ -98,19 +116,6 @@
             &__img {
                 width: 70%;
                 height: 11rem;
-
-                // &--1 {
-                //     // width: 50rem;
-                //     // height: 15rem;
-                // }
-
-                // &--2 {
-                //     fill: #9d6806;
-                // }
-
-                // &--3 {
-                //     fill: #006d00;
-                // }
             }
         }
     }
@@ -124,6 +129,9 @@
         align-items: flex-start;
         &--info {
             padding: 0.5rem 1rem;
+            @include respond(tab-port) {
+                margin-bottom: 3rem;
+            }
         }
     }
 

@@ -209,6 +209,9 @@ body {
 
 .paymentDetails {
   padding: 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .paymentDetails {
+      padding: 5rem 2rem; } }
   .paymentDetails .navbar {
     display: flex;
     justify-content: space-between; }
@@ -245,9 +248,15 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .paymentDetails .payment {
+        margin: 4rem 0; } }
     .paymentDetails .payment .secure {
       display: flex;
       margin-top: 1rem; }
+      @media only screen and (max-width: 56.25em) {
+        .paymentDetails .payment .secure {
+          margin-left: 4rem; } }
       .paymentDetails .payment .secure .lock {
         width: 2rem;
         height: 2rem;
@@ -256,6 +265,9 @@ body {
       .paymentDetails .payment .secure .paragraph__secondary {
         line-height: 2rem;
         margin-left: -1rem; }
+        @media only screen and (max-width: 56.25em) {
+          .paymentDetails .payment .secure .paragraph__secondary br {
+            display: none; } }
     .paymentDetails .paymentMethods {
       display: flex;
       margin-bottom: 1.5rem; }
@@ -270,6 +282,9 @@ body {
     border: 1px solid #eee;
     box-sizing: content-box;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .paymentDetails .hr {
+        margin-bottom: 3rem; } }
   .paymentDetails .cards {
     display: grid;
     grid-template-columns: 35% 1fr; }
@@ -286,6 +301,9 @@ body {
   align-items: flex-start; }
   .cards__details .card__details--info {
     padding: 0.5rem 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .cards__details .card__details--info {
+        margin-bottom: 3rem; } }
 
 .cards__details .card__details--number {
   display: flex;
