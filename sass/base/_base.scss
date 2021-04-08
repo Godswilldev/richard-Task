@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c4e1ff;
+    height: 100vh;
+    font-family: "Commissioner", sans-serif;
+}
+.background {
+    background-color: rgba(255, 255, 255, 0.486);
+    padding: 4rem;
+    height: 90%;
+    width: 90%;
+    @include absCenter;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+
+    .orderSummary {
+        // background-color: green;
+    }
+
+    .paymentDetails {
+        background-color: rebeccapurple;
+        border-radius: 1rem;
+    }
+}

@@ -1,0 +1,126 @@
+.orderSummary {
+    padding: 2rem 3rem;
+
+    &__header {
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__step {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        height: 10rem;
+        margin-top: 1rem;
+
+        &--1 {
+            display: flex;
+            align-items: center;
+
+            &--icon {
+                .icons {
+                    padding: 1rem;
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    border-radius: 50%;
+                }
+                .shipping__icon {
+                    background-color: #eedeffe7;
+                    fill: rgb(152, 105, 199);
+                }
+                .credit-card__icon {
+                    fill: rgb(157, 104, 6);
+                    background-color: #ffd59ed5;
+                }
+                .loop__icon {
+                    background-color: rgba(190, 243, 111, 0.796);
+                    fill: #006d00;
+                }
+            }
+        }
+
+        &--description {
+            font-size: 1.5rem;
+            padding: 1rem;
+            color: #0505058f;
+            cursor: pointer;
+            &.paragraph__title {
+                color: $Dark-gray;
+            }
+        }
+    }
+}
+
+.shipping__items {
+    margin-top: 3rem;
+    .shipping__item {
+        transition: 0.5s all;
+        width: 90%;
+        margin: 0 auto;
+
+        &--header {
+            transition: 0.5s all;
+            display: flex;
+            height: 5rem;
+            background-color: #ffffff;
+            justify-content: space-between;
+            border-radius: 1rem;
+            align-items: center;
+            padding: 0 2rem;
+            margin-top: 1rem;
+
+            .arrow__icon {
+                transition: 0.5s all;
+
+                width: 2rem;
+                height: 2rem;
+                cursor: pointer;
+
+                transform: rotate(180deg);
+                &.inactive {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+
+        &--lists {
+            transition: 0.5s all;
+            padding: 2rem 1.5rem;
+        }
+        &--list {
+            transition: 0.5s all;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.8rem;
+            align-items: center;
+            margin: 0 auto;
+            &--name {
+                font-size: 2rem;
+            }
+
+            &--price {
+            }
+        }
+    }
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem auto;
+    margin-top: 4rem;
+    width: 90%;
+}
+
+.shipping__items.active {
+    & .shipping__item--lists {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    & .arrow__icon {
+        transform: rotate(180deg);
+    }
+}
