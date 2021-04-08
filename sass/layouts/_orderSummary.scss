@@ -26,16 +26,16 @@
                     border-radius: 50%;
                 }
                 .shipping__icon {
-                    background-color: #eedeffe7;
-                    fill: #9869c7;
+                    background-color: $shipping__icon-background-color;
+                    fill: $shipping__icon-fill;
                 }
                 .credit-card__icon {
-                    fill: #9d6806;
-                    background-color: #ffd59ed5;
+                    fill: $credit-card__icon-fill;
+                    background-color: $credit-card-icon-background-color;
                 }
                 .loop__icon {
-                    background-color: rgba(190, 243, 111, 0.796);
-                    fill: #006d00;
+                    background-color: $loop__icon-background-color;
+                    fill: $loop__icon-fill;
                 }
             }
         }
@@ -43,7 +43,7 @@
         &--description {
             font-size: 1.5rem;
             padding: 1rem;
-            color: #0505058f;
+            color: $paragraph-secondary;
             cursor: pointer;
             &.paragraph__title {
                 color: $Dark-gray;
@@ -53,19 +53,14 @@
 }
 
 .shipping__items {
-    transition: 0.5s all;
-
     margin-top: 3rem;
     .shipping__item {
-        transition: 0.5s all;
         width: 90%;
         margin: 0 auto;
-
         &--header {
-            transition: 0.5s all;
             display: flex;
             height: 5rem;
-            background-color: #ffffff;
+            background-color: $white;
             justify-content: space-between;
             border-radius: 1rem;
             align-items: center;
@@ -74,7 +69,6 @@
 
             .arrow__icon {
                 transition: 0.5s all;
-
                 width: 2rem;
                 height: 2rem;
                 cursor: pointer;
@@ -85,24 +79,19 @@
             }
         }
         &.active {
-            transition: 0.5s all;
-
             .shipping__item--lists {
-                transition: 0.5s all;
                 opacity: 1;
                 display: block;
                 visibility: visible;
             }
         }
         &--lists {
-            transition: 0.5s all;
             padding: 2rem 1.5rem;
             opacity: 0;
             visibility: hidden;
             display: none;
         }
         &--list {
-            transition: 0.5s all;
             display: flex;
             justify-content: space-between;
             font-size: 1.8rem;

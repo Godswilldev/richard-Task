@@ -52,7 +52,7 @@ body {
       background-color: transparent; } }
   @media only screen and (max-width: 56.25em) {
     .background .orderSummary {
-      background-color: #ffffff7c;
+      background-color: #c4e1ff;
       padding: 4rem 0; } }
   .background .paymentDetails {
     background-color: #ffffff;
@@ -80,7 +80,7 @@ body {
   overflow: hidden;
   outline: none;
   font-size: 1.5rem;
-  color: #fff;
+  color: #ffffff;
   background-color: black;
   padding: 2rem;
   letter-spacing: 0.2rem;
@@ -99,16 +99,16 @@ body {
     border: 1px solid #000000bb; }
   .btn .circle {
     position: absolute;
-    background-color: #fff;
+    background-color: #ffffff;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0);
     animation: scale 0.5s ease-in-out; }
   .btn__dark {
-    background-color: #fff;
+    background-color: #ffffff;
     color: black;
-    border: 1px solid #fff; }
+    border: 1px solid #ffffff; }
 
 @keyframes scale {
   to {
@@ -153,14 +153,11 @@ body {
         color: #595959; }
 
 .shipping__items {
-  transition: 0.5s all;
   margin-top: 3rem; }
   .shipping__items .shipping__item {
-    transition: 0.5s all;
     width: 90%;
     margin: 0 auto; }
     .shipping__items .shipping__item--header {
-      transition: 0.5s all;
       display: flex;
       height: 5rem;
       background-color: #ffffff;
@@ -176,21 +173,16 @@ body {
         cursor: pointer; }
         .shipping__items .shipping__item--header .arrow__icon.up {
           transform: rotate(180deg); }
-    .shipping__items .shipping__item.active {
-      transition: 0.5s all; }
-      .shipping__items .shipping__item.active .shipping__item--lists {
-        transition: 0.5s all;
-        opacity: 1;
-        display: block;
-        visibility: visible; }
+    .shipping__items .shipping__item.active .shipping__item--lists {
+      opacity: 1;
+      display: block;
+      visibility: visible; }
     .shipping__items .shipping__item--lists {
-      transition: 0.5s all;
       padding: 2rem 1.5rem;
       opacity: 0;
       visibility: hidden;
       display: none; }
     .shipping__items .shipping__item--list {
-      transition: 0.5s all;
       display: flex;
       justify-content: space-between;
       font-size: 1.8rem;

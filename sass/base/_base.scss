@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-color: #c4e1ff;
+    background-color: $body-background;
     height: 100vh;
     font-family: "Commissioner", sans-serif;
     // @include respond(tab-port) {
@@ -20,7 +20,7 @@ body {
     // }
 }
 .background {
-    background-color: #ffffff7c;
+    background-color: $body-background2;
     padding: 4rem;
     height: 90%;
     width: 90%;
@@ -38,13 +38,13 @@ body {
 
     .orderSummary {
         @include respond(tab-port) {
-            background-color: #ffffff7c;
+            background-color: $body-background;
             padding: 4rem 0;
         }
     }
 
     .paymentDetails {
-        background-color: #ffffff;
+        background-color: $white;
         border-radius: 1rem;
     }
 }
